@@ -78,6 +78,12 @@ case "$1" in
 	repo_sync $1
 	;;
 	
+"kumquat")
+	echo DEVICE=anzu >> .tmp-config &&
+	echo LUNCH=full_kumquat-userdebug >> .tmp-config &&
+	repo_sync $1
+	;;
+	
 "kumquat-b2jc")
 	echo DEVICE=anzu >> .tmp-config &&
 	echo LUNCH=full_kumquat-userdebug >> .tmp-config &&
