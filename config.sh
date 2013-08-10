@@ -77,6 +77,12 @@ case "$1" in
 	echo LUNCH=full_sc06d-userdebug >> .tmp-config &&
 	repo_sync $1
 	;;
+	
+"kumquat-b2jc")
+	echo DEVICE=anzu >> .tmp-config &&
+	echo LUNCH=full_kumquat-userdebug >> .tmp-config &&
+	repo_sync $1
+	;;
 
 "anzu")
 	echo DEVICE=anzu >> .tmp-config &&
@@ -176,6 +182,7 @@ case "$1" in
 	echo - sc02c
 	echo - sc02c-b2jc
 	echo - sc06d
+	echo - kumquat
 	echo - sc06d-b2jc
 	echo - galaxy-nexus
 	echo - nexus-s
